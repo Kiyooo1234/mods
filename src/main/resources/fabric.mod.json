@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "doubleclickspersecond",
+	"version": "${version}",
+	"name": "DoubleClicksPerSecond",
+	"description": "Shows your clicks per second (CPS) on the HUD and highlights double clicks.",
+	"authors": [
+		"Rapsac"
+	],
+	"license": "MIT",
+	"icon": "assets/doubleclickspersecond/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"net.rapsac.doubleclickspersecond.DoubleClicksPerSecondClient"
+		]
+	},
+	"mixins": [
+		"doubleclickspersecond.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
